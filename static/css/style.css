@@ -1,0 +1,120 @@
+body,html
+{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.obj1, .obj2
+{
+  z-index: 11;
+  float:left;
+  width: 20%;
+  height: 100%;
+  background-color: #002240;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  box-shadow: 5px 0px 10px #000;
+}
+
+.dropdown
+{
+  margin-top: 50%;
+  text-align: center;
+  width: 50%;
+}
+
+.container
+{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border: 1px solid #fff;
+}
+
+.option
+{
+  margin-top: 40%;
+  margin-bottom: 40%;
+  -webkit-transition: background-color .6s ease-in-out;
+  -moz-transition: background-color .6s ease-in-out;
+  -o-transition: background-color .6s ease-in-out;
+  transition: background-color .6s ease-in-out;
+  cursor: pointer;
+}
+
+.quantity input
+{
+  text-align: center;
+}
+
+.option:hover
+{
+  background-color: #fff;
+  color: #002240;
+}
+
+.obj2
+{
+  -webkit-transition: left .6s ease-in-out;
+  -moz-transition: left .6s ease-in-out;
+  -o-transition: left .6s ease-in-out;
+  transition: left .6s ease-in-out;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.slide
+{
+
+  left:20%;
+}
+
+.obj3
+{
+  margin-top: 5%;
+  display: inline-block;
+  width: 100%;
+}
+
+.item, .arrows
+{
+  text-align: center;
+  padding: 3%;
+  border: 1px solid #002240;
+  width: 50%;
+  margin-bottom: 3%;
+  margin-left: 25%;
+  color: #002240;
+}
+
+.number
+{
+  display: inline;
+  float: left;
+}
+
+.arrows
+{
+  border: none;
+  font-size: 4em;
+}
+
+.back, .forward
+{
+  display: inline;
+  float: center;
+  cursor: pointer;
+}
+
+.hidden
+{
+  display: none;
+}
+
+.no-quantity
+{
+  border-color: red;
+}

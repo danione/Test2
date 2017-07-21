@@ -1,0 +1,24 @@
+<div class="items">
+  <% var itemsCount = 0, currentPage = 1%>
+  <% for(var i = 1; i <= data.quantity; i++) {%>
+    <% if(itemsCount++ % 3 == 0){%>
+    <div class="<%= currentPage++ %> hidden">
+    <% } %>
+    <div class="item">
+      <div class="number"> <%= i %> </div>
+      <span class="text"> Item<%= data.letter + i %> </span>
+    </div>
+    <% if(itemsCount % 3 == 0){ %>
+    </div>
+    <%} %>
+  <% } %>
+  <% if(itemsCount % 3 != 0){ %>
+    </div>
+  <%} %>
+
+  <div class="arrows">
+    <div class="back"><</div>
+    <div class="forward">></div>
+
+  </div>
+</div>
